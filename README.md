@@ -1,2 +1,2 @@
-# nested-comment-widget
+# Nested-comment-widget
 Pure JS nested comment widget
