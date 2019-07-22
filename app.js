@@ -164,7 +164,7 @@ function renderReply(reply, replyDivId) {
  */
 function addReply(reply, commentId, replyDivId) {
   let replyObj = _prepareCommentObj(reply);
-  comments = iterateComments(comments, replyObj, commentId);
+  comments = findAndUpdateComments(comments, replyObj, commentId);
   renderReply(replyObj, replyDivId)
   _updateStore(comments);
 }
