@@ -181,7 +181,7 @@ function addComment() {
 }
 
 /**
- * Inti function
+ * Init function
  */
 function _init() {
   if (!window.localStorage.getItem('comments')) {
@@ -189,9 +189,6 @@ function _init() {
   }
 
   comments = JSON.parse(window.localStorage.getItem('comments'));
-
-  console.log(comments); 
-
   commentList = document.getElementById('comments-list');
 
   for (let key in comments) {
